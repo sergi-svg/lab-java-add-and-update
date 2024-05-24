@@ -67,6 +67,7 @@ Create the following routes as efficiently as possible, using validation where a
    - What is the cost-benefit between using `PUT` and `PATCH`?
 
 <br>  
+- http://localhost:8080/swagger-ui/index.htm  
 
 ## FAQs
 
