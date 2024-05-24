@@ -20,7 +20,7 @@ public class Patient {
     private String dateOfBirth;
 
     @ManyToOne
-    @JoinColumn(name = "admitted_by")
+    @JoinColumn(name = "admitted_by", referencedColumnName = "employee_id")
     private Doctor doctor;
 }
 
