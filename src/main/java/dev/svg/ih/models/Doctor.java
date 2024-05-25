@@ -1,5 +1,6 @@
 package dev.svg.ih.models;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,5 +24,6 @@ public class Doctor {
     private Status status;
 
     @OneToMany(mappedBy = "doctor")
+    @JsonManagedReference
     List<Patient> patients;
 }

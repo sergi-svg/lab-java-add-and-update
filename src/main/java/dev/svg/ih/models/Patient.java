@@ -1,5 +1,6 @@
 package dev.svg.ih.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -21,6 +22,7 @@ public class Patient {
 
     @ManyToOne
     @JoinColumn(name = "admitted_by", referencedColumnName = "employee_id")
+    @JsonBackReference
     private Doctor doctor;
 }
 
